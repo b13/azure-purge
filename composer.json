@@ -1,0 +1,23 @@
+{
+    "name": "b13/azure-purge",
+    "type": "typo3-cms-extension",
+    "description": "Azure CDN Adapter for purging TYPO3 caches",
+	"keywords": ["typo3", "cdn", "azure", "cache", "purge"],
+	"license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms-core": "^9.5 || ^10.0 || ^11.0"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "azure_purge"
+        }
+    },
+    "suggest": {
+        "b13/proxycachemanager": "Proxy Cache Manager Extension to provide integration into TYPO3s Backend Cache Flush methods"
+    },
+    "autoload": {
+        "psr-4": {
+            "B13\\AzurePurge\\": "Classes/"
+        }
+    }
+}
